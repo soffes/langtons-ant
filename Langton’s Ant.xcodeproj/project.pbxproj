@@ -120,9 +120,9 @@
 		211873931F50D8F1005F7DE7 /* Langton’s Ant */ = {
 			isa = PBXGroup;
 			children = (
+				211873C61F50D939005F7DE7 /* LangtonsAntView.swift */,
 				211873C41F50D939005F7DE7 /* BoardView.swift */,
 				211873C51F50D939005F7DE7 /* Info.plist */,
-				211873C61F50D939005F7DE7 /* LangtonsAntView.swift */,
 			);
 			path = "Langton’s Ant";
 			sourceTree = "<group>";
@@ -130,12 +130,12 @@
 		211873A31F50D8FE005F7DE7 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
-				211873E61F50ECA2005F7DE7 /* Preview.entitlements */,
-				211873D81F50D95C005F7DE7 /* Main.storyboard */,
 				211873D01F50D959005F7DE7 /* AppDelegate.swift */,
+				211873D31F50D959005F7DE7 /* PreviewWindowController.swift */,
+				211873D81F50D95C005F7DE7 /* Main.storyboard */,
 				211873D11F50D959005F7DE7 /* Images.xcassets */,
 				211873D21F50D959005F7DE7 /* Info.plist */,
-				211873D31F50D959005F7DE7 /* PreviewWindowController.swift */,
+				211873E61F50ECA2005F7DE7 /* Preview.entitlements */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
@@ -143,12 +143,12 @@
 		211873B71F50D905005F7DE7 /* Langton */ = {
 			isa = PBXGroup;
 			children = (
+				211873B81F50D905005F7DE7 /* Langton.h */,
 				211873DB1F50D965005F7DE7 /* Ant.swift */,
 				211873DC1F50D965005F7DE7 /* Board.swift */,
 				211873DD1F50D965005F7DE7 /* Direction.swift */,
 				211873DE1F50D965005F7DE7 /* Point.swift */,
 				211873DF1F50D965005F7DE7 /* Size.swift */,
-				211873B81F50D905005F7DE7 /* Langton.h */,
 				211873B91F50D905005F7DE7 /* Info.plist */,
 			);
 			path = Langton;
