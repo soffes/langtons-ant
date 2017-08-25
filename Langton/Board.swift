@@ -13,7 +13,10 @@ public struct Board {
 	public let size: Size
 
 	public private(set) var ants = [Ant]()
+
 	public private(set) var filled = Set<Point>()
+
+	public var noise = Set<Point>()
 
 
 	// MARK: - Initializers
@@ -27,7 +30,7 @@ public struct Board {
 
 	public subscript(_ point: Point) -> Bool {
 		get {
-			return filled.contains(point)
+			return filled.contains(point) || noise.contains(point)
 		}
 
 		set(newValue) {
@@ -36,6 +39,8 @@ public struct Board {
 			} else {
 				filled.remove(point)
 			}
+
+			noise.remove(point)
 		}
 	}
 

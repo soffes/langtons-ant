@@ -23,7 +23,7 @@ final class BoardView: NSView {
 		}
 	}
 
-	var scale: CGFloat = 8 {
+	var scale: CGFloat = 10 {
 		didSet {
 			invalidateIntrinsicContentSize()
 		}
@@ -53,7 +53,15 @@ final class BoardView: NSView {
 	override func draw(_ rect: CGRect) {
 		guard let context = NSGraphicsContext.current()?.cgContext else { return }
 
+		// Noise
+		context.setFillColor(NSColor.lightGray.cgColor)
+		for point in board.noise {
+			let rect = CGRect(x: scale * CGFloat(point.x), y: scale * CGFloat(point.y), width: scale, height: scale)
+			context.fill(rect)
+		}
+
 		// Points
+		context.setFillColor(NSColor.black.cgColor)
 		for point in board.filled {
 			let rect = CGRect(x: scale * CGFloat(point.x), y: scale * CGFloat(point.y), width: scale, height: scale)
 			context.fill(rect)

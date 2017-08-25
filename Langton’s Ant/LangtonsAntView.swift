@@ -62,7 +62,7 @@ final class LangtonsAntView: ScreenSaverView {
 
 		previousSize = bounds.size
 
-		var board = Board(size: Size(width: Int(previousSize.width / 8), height: Int(previousSize.height / 8)))
+		var board = Board(size: Size(width: Int(previousSize.width / 10), height: Int(previousSize.height / 10)))
 
 		// Create 9 ants
 		for i in 1...9 {
@@ -72,13 +72,17 @@ final class LangtonsAntView: ScreenSaverView {
 		}
 
 		// Create some noise
+		var noise = Set<Point>()
 		for x in 0..<board.size.width {
 			for y in 0..<board.size.height {
 				if arc4random_uniform(10) == 0 {
-					board[Point(x: x, y: y)] = true
+					let point = Point(x: x, y: y)
+					noise.insert(point)
 				}
 			}
 		}
+
+		board.noise = noise
 
 		let boardView = BoardView(board: board)
 		boardView.wantsLayer = true
