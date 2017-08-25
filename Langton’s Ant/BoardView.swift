@@ -7,7 +7,6 @@
 //
 
 import AppKit
-import Langton
 
 final class BoardView: NSView {
 
@@ -52,6 +51,10 @@ final class BoardView: NSView {
 
 	override func draw(_ rect: CGRect) {
 		guard let context = NSGraphicsContext.current()?.cgContext else { return }
+
+		// Background
+		context.setFillColor(NSColor.white.cgColor)
+		context.fill(bounds)
 
 		// Noise
 		context.setFillColor(NSColor.lightGray.cgColor)

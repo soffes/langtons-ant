@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		211873BA1F50D905005F7DE7 /* Langton.h in Headers */ = {isa = PBXBuildFile; fileRef = 211873B81F50D905005F7DE7 /* Langton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		211873BD1F50D906005F7DE7 /* Langton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211873B61F50D905005F7DE7 /* Langton.framework */; };
-		211873BE1F50D906005F7DE7 /* Langton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 211873B61F50D905005F7DE7 /* Langton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		211873C81F50D939005F7DE7 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873C41F50D939005F7DE7 /* BoardView.swift */; };
 		211873CA1F50D939005F7DE7 /* LangtonsAntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873C61F50D939005F7DE7 /* LangtonsAntView.swift */; };
 		211873CE1F50D94E005F7DE7 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873C41F50D939005F7DE7 /* BoardView.swift */; };
@@ -18,43 +15,21 @@
 		211873D51F50D959005F7DE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211873D11F50D959005F7DE7 /* Images.xcassets */; };
 		211873D71F50D959005F7DE7 /* PreviewWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873D31F50D959005F7DE7 /* PreviewWindowController.swift */; };
 		211873DA1F50D95C005F7DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211873D81F50D95C005F7DE7 /* Main.storyboard */; };
-		211873E01F50D965005F7DE7 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873DB1F50D965005F7DE7 /* Ant.swift */; };
-		211873E11F50D965005F7DE7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873DC1F50D965005F7DE7 /* Board.swift */; };
-		211873E21F50D965005F7DE7 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873DD1F50D965005F7DE7 /* Direction.swift */; };
-		211873E31F50D965005F7DE7 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873DE1F50D965005F7DE7 /* Point.swift */; };
-		211873E41F50D965005F7DE7 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873DF1F50D965005F7DE7 /* Size.swift */; };
+		211873EC1F50ED3B005F7DE7 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E71F50ED3B005F7DE7 /* Ant.swift */; };
+		211873ED1F50ED3B005F7DE7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E81F50ED3B005F7DE7 /* Board.swift */; };
+		211873EE1F50ED3B005F7DE7 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E91F50ED3B005F7DE7 /* Direction.swift */; };
+		211873EF1F50ED3B005F7DE7 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873EA1F50ED3B005F7DE7 /* Point.swift */; };
+		211873F01F50ED3B005F7DE7 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873EB1F50ED3B005F7DE7 /* Size.swift */; };
+		211873F11F50EE61005F7DE7 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E71F50ED3B005F7DE7 /* Ant.swift */; };
+		211873F21F50EE61005F7DE7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E81F50ED3B005F7DE7 /* Board.swift */; };
+		211873F31F50EE61005F7DE7 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E91F50ED3B005F7DE7 /* Direction.swift */; };
+		211873F41F50EE61005F7DE7 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873EA1F50ED3B005F7DE7 /* Point.swift */; };
+		211873F51F50EE61005F7DE7 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873EB1F50ED3B005F7DE7 /* Size.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		211873BB1F50D906005F7DE7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 211873881F50D8F1005F7DE7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 211873B51F50D905005F7DE7;
-			remoteInfo = Langton;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		211873C21F50D906005F7DE7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				211873BE1F50D906005F7DE7 /* Langton.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		211873911F50D8F1005F7DE7 /* Langton’s Ant.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Langton’s Ant.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		211873A21F50D8FE005F7DE7 /* Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preview.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		211873B61F50D905005F7DE7 /* Langton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Langton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		211873B81F50D905005F7DE7 /* Langton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Langton.h; sourceTree = "<group>"; };
-		211873B91F50D905005F7DE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211873C41F50D939005F7DE7 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		211873C51F50D939005F7DE7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211873C61F50D939005F7DE7 /* LangtonsAntView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangtonsAntView.swift; sourceTree = "<group>"; };
@@ -63,12 +38,12 @@
 		211873D21F50D959005F7DE7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211873D31F50D959005F7DE7 /* PreviewWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewWindowController.swift; sourceTree = "<group>"; };
 		211873D91F50D95C005F7DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		211873DB1F50D965005F7DE7 /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
-		211873DC1F50D965005F7DE7 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
-		211873DD1F50D965005F7DE7 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		211873DE1F50D965005F7DE7 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		211873DF1F50D965005F7DE7 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		211873E61F50ECA2005F7DE7 /* Preview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Preview.entitlements; sourceTree = "<group>"; };
+		211873E71F50ED3B005F7DE7 /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
+		211873E81F50ED3B005F7DE7 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		211873E91F50ED3B005F7DE7 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		211873EA1F50ED3B005F7DE7 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		211873EB1F50ED3B005F7DE7 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211873BD1F50D906005F7DE7 /* Langton.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		211873B21F50D905005F7DE7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +69,6 @@
 			children = (
 				211873931F50D8F1005F7DE7 /* Langton’s Ant */,
 				211873A31F50D8FE005F7DE7 /* Preview */,
-				211873B71F50D905005F7DE7 /* Langton */,
 				211873921F50D8F1005F7DE7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,7 +78,6 @@
 			children = (
 				211873911F50D8F1005F7DE7 /* Langton’s Ant.saver */,
 				211873A21F50D8FE005F7DE7 /* Preview.app */,
-				211873B61F50D905005F7DE7 /* Langton.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +87,11 @@
 			children = (
 				211873C61F50D939005F7DE7 /* LangtonsAntView.swift */,
 				211873C41F50D939005F7DE7 /* BoardView.swift */,
+				211873E71F50ED3B005F7DE7 /* Ant.swift */,
+				211873E81F50ED3B005F7DE7 /* Board.swift */,
+				211873E91F50ED3B005F7DE7 /* Direction.swift */,
+				211873EA1F50ED3B005F7DE7 /* Point.swift */,
+				211873EB1F50ED3B005F7DE7 /* Size.swift */,
 				211873C51F50D939005F7DE7 /* Info.plist */,
 			);
 			path = "Langton’s Ant";
@@ -140,20 +110,6 @@
 			path = Preview;
 			sourceTree = "<group>";
 		};
-		211873B71F50D905005F7DE7 /* Langton */ = {
-			isa = PBXGroup;
-			children = (
-				211873B81F50D905005F7DE7 /* Langton.h */,
-				211873DB1F50D965005F7DE7 /* Ant.swift */,
-				211873DC1F50D965005F7DE7 /* Board.swift */,
-				211873DD1F50D965005F7DE7 /* Direction.swift */,
-				211873DE1F50D965005F7DE7 /* Point.swift */,
-				211873DF1F50D965005F7DE7 /* Size.swift */,
-				211873B91F50D905005F7DE7 /* Info.plist */,
-			);
-			path = Langton;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -161,14 +117,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		211873B31F50D905005F7DE7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				211873BA1F50D905005F7DE7 /* Langton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,35 +148,15 @@
 				2118739E1F50D8FE005F7DE7 /* Sources */,
 				2118739F1F50D8FE005F7DE7 /* Frameworks */,
 				211873A01F50D8FE005F7DE7 /* Resources */,
-				211873C21F50D906005F7DE7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				211873BC1F50D906005F7DE7 /* PBXTargetDependency */,
 			);
 			name = Preview;
 			productName = Preview;
 			productReference = 211873A21F50D8FE005F7DE7 /* Preview.app */;
 			productType = "com.apple.product-type.application";
-		};
-		211873B51F50D905005F7DE7 /* Langton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 211873BF1F50D906005F7DE7 /* Build configuration list for PBXNativeTarget "Langton" */;
-			buildPhases = (
-				211873B11F50D905005F7DE7 /* Sources */,
-				211873B21F50D905005F7DE7 /* Frameworks */,
-				211873B31F50D905005F7DE7 /* Headers */,
-				211873B41F50D905005F7DE7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Langton;
-			productName = Langton;
-			productReference = 211873B61F50D905005F7DE7 /* Langton.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -256,11 +184,6 @@
 							};
 						};
 					};
-					211873B51F50D905005F7DE7 = {
-						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
-					};
 				};
 			};
 			buildConfigurationList = 2118738B1F50D8F1005F7DE7 /* Build configuration list for PBXProject "Langton’s Ant" */;
@@ -278,7 +201,6 @@
 			targets = (
 				211873901F50D8F1005F7DE7 /* Langton’s Ant */,
 				211873A11F50D8FE005F7DE7 /* Preview */,
-				211873B51F50D905005F7DE7 /* Langton */,
 			);
 		};
 /* End PBXProject section */
@@ -300,13 +222,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		211873B41F50D905005F7DE7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -314,7 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211873EC1F50ED3B005F7DE7 /* Ant.swift in Sources */,
+				211873F01F50ED3B005F7DE7 /* Size.swift in Sources */,
 				211873CA1F50D939005F7DE7 /* LangtonsAntView.swift in Sources */,
+				211873EF1F50ED3B005F7DE7 /* Point.swift in Sources */,
+				211873ED1F50ED3B005F7DE7 /* Board.swift in Sources */,
+				211873EE1F50ED3B005F7DE7 /* Direction.swift in Sources */,
 				211873C81F50D939005F7DE7 /* BoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,34 +243,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211873F41F50EE61005F7DE7 /* Point.swift in Sources */,
+				211873F31F50EE61005F7DE7 /* Direction.swift in Sources */,
 				211873D41F50D959005F7DE7 /* AppDelegate.swift in Sources */,
 				211873CF1F50D94E005F7DE7 /* LangtonsAntView.swift in Sources */,
+				211873F51F50EE61005F7DE7 /* Size.swift in Sources */,
+				211873F21F50EE61005F7DE7 /* Board.swift in Sources */,
 				211873D71F50D959005F7DE7 /* PreviewWindowController.swift in Sources */,
+				211873F11F50EE61005F7DE7 /* Ant.swift in Sources */,
 				211873CE1F50D94E005F7DE7 /* BoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		211873B11F50D905005F7DE7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				211873E31F50D965005F7DE7 /* Point.swift in Sources */,
-				211873E41F50D965005F7DE7 /* Size.swift in Sources */,
-				211873E11F50D965005F7DE7 /* Board.swift in Sources */,
-				211873E01F50D965005F7DE7 /* Ant.swift in Sources */,
-				211873E21F50D965005F7DE7 /* Direction.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		211873BC1F50D906005F7DE7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 211873B51F50D905005F7DE7 /* Langton */;
-			targetProxy = 211873BB1F50D906005F7DE7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		211873D81F50D95C005F7DE7 /* Main.storyboard */ = {
@@ -456,6 +361,7 @@
 		2118739C1F50D8F1005F7DE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LHDXBG4XBK;
@@ -473,6 +379,7 @@
 		2118739D1F50D8F1005F7DE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LHDXBG4XBK;
@@ -489,7 +396,6 @@
 		211873AF1F50D8FE005F7DE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Preview/Preview.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -507,7 +413,6 @@
 		211873B01F50D8FE005F7DE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Preview/Preview.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -518,63 +423,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		211873C01F50D906005F7DE7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Langton/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.langton;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		211873C11F50D906005F7DE7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Langton/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.langton;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -604,15 +452,6 @@
 			buildConfigurations = (
 				211873AF1F50D8FE005F7DE7 /* Debug */,
 				211873B01F50D8FE005F7DE7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		211873BF1F50D906005F7DE7 /* Build configuration list for PBXNativeTarget "Langton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				211873C01F50D906005F7DE7 /* Debug */,
-				211873C11F50D906005F7DE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

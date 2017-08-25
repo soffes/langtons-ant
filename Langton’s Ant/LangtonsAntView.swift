@@ -7,7 +7,6 @@
 //
 
 import ScreenSaver
-import Langton
 
 final class LangtonsAntView: ScreenSaverView {
 
@@ -34,6 +33,13 @@ final class LangtonsAntView: ScreenSaverView {
 		setupBoard()
 	}
 
+	override func draw(_ rect: NSRect) {
+		guard let context = NSGraphicsContext.current()?.cgContext else { return }
+
+		context.setFillColor(NSColor.white.cgColor)
+		context.fill(bounds)
+	}
+
 
 	// MARK: - ScreenSaverView
 
@@ -56,9 +62,6 @@ final class LangtonsAntView: ScreenSaverView {
 		if previousSize == bounds.size {
 			return
 		}
-
-		wantsLayer = true
-		layer?.backgroundColor = NSColor.white.cgColor
 
 		previousSize = bounds.size
 
@@ -85,8 +88,6 @@ final class LangtonsAntView: ScreenSaverView {
 		board.noise = noise
 
 		let boardView = BoardView(board: board)
-		boardView.wantsLayer = true
-		boardView.layer?.backgroundColor = NSColor.white.cgColor
 
 		// Add the board as a subview
 		boardView.translatesAutoresizingMaskIntoConstraints = false

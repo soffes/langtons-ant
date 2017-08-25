@@ -21,6 +21,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 Sam Soffes. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>Langton_s_AntView</string>
+	<string>$(MODULE_NAME).LangtonsAntView</string>
 </dict>
 </plist>
