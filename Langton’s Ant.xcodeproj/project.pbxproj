@@ -25,6 +25,8 @@
 		211873F31F50EE61005F7DE7 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E91F50ED3B005F7DE7 /* Direction.swift */; };
 		211873F41F50EE61005F7DE7 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873EA1F50ED3B005F7DE7 /* Point.swift */; };
 		211873F51F50EE61005F7DE7 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873EB1F50ED3B005F7DE7 /* Size.swift */; };
+		211873F91F50EF83005F7DE7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873F81F50EF83005F7DE7 /* Theme.swift */; };
+		211873FA1F50F024005F7DE7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873F81F50EF83005F7DE7 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,7 @@
 		211873E91F50ED3B005F7DE7 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		211873EA1F50ED3B005F7DE7 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		211873EB1F50ED3B005F7DE7 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		211873F81F50EF83005F7DE7 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +88,8 @@
 		211873931F50D8F1005F7DE7 /* Langton’s Ant */ = {
 			isa = PBXGroup;
 			children = (
-				211873C61F50D939005F7DE7 /* LangtonsAntView.swift */,
-				211873C41F50D939005F7DE7 /* BoardView.swift */,
-				211873E71F50ED3B005F7DE7 /* Ant.swift */,
-				211873E81F50ED3B005F7DE7 /* Board.swift */,
-				211873E91F50ED3B005F7DE7 /* Direction.swift */,
-				211873EA1F50ED3B005F7DE7 /* Point.swift */,
-				211873EB1F50ED3B005F7DE7 /* Size.swift */,
+				211873F71F50EF7B005F7DE7 /* Views */,
+				211873F61F50EF74005F7DE7 /* Models */,
 				211873C51F50D939005F7DE7 /* Info.plist */,
 			);
 			path = "Langton’s Ant";
@@ -108,6 +106,28 @@
 				211873E61F50ECA2005F7DE7 /* Preview.entitlements */,
 			);
 			path = Preview;
+			sourceTree = "<group>";
+		};
+		211873F61F50EF74005F7DE7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				211873E71F50ED3B005F7DE7 /* Ant.swift */,
+				211873E81F50ED3B005F7DE7 /* Board.swift */,
+				211873E91F50ED3B005F7DE7 /* Direction.swift */,
+				211873EA1F50ED3B005F7DE7 /* Point.swift */,
+				211873EB1F50ED3B005F7DE7 /* Size.swift */,
+				211873F81F50EF83005F7DE7 /* Theme.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		211873F71F50EF7B005F7DE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				211873C61F50D939005F7DE7 /* LangtonsAntView.swift */,
+				211873C41F50D939005F7DE7 /* BoardView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				211873EC1F50ED3B005F7DE7 /* Ant.swift in Sources */,
+				211873F91F50EF83005F7DE7 /* Theme.swift in Sources */,
 				211873F01F50ED3B005F7DE7 /* Size.swift in Sources */,
 				211873CA1F50D939005F7DE7 /* LangtonsAntView.swift in Sources */,
 				211873EF1F50ED3B005F7DE7 /* Point.swift in Sources */,
@@ -250,6 +271,7 @@
 				211873F51F50EE61005F7DE7 /* Size.swift in Sources */,
 				211873F21F50EE61005F7DE7 /* Board.swift in Sources */,
 				211873D71F50D959005F7DE7 /* PreviewWindowController.swift in Sources */,
+				211873FA1F50F024005F7DE7 /* Theme.swift in Sources */,
 				211873F11F50EE61005F7DE7 /* Ant.swift in Sources */,
 				211873CE1F50D94E005F7DE7 /* BoardView.swift in Sources */,
 			);

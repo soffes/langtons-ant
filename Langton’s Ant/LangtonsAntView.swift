@@ -90,7 +90,7 @@ final class LangtonsAntView: ScreenSaverView {
 
 		board.noise = noise
 
-		let boardView = BoardView(board: board)
+		let boardView = BoardView(board: board, theme: DarkTheme())
 
 		// Add the board as a subview
 		boardView.translatesAutoresizingMaskIntoConstraints = false
