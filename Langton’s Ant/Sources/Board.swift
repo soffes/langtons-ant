@@ -74,7 +74,7 @@ public struct Board {
 				updated.turnLeft()
 			}
 
-				// At a unfilled square, turn 90° right
+			// At a unfilled square, turn 90° right
 			else {
 				updated.turnRight()
 			}

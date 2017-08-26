@@ -109,7 +109,7 @@ import ScreenSaver
 		// Create 9 ants
 		let offset = Point(x: Int(Double(board.size.width) * 0.2), y: Int(Double(board.size.height) * 0.2))
 		let maxX = UInt32(Double(board.size.width) * 0.6)
-		let maxY = UInt32(Double(board.size.width) * 0.6)
+		let maxY = UInt32(Double(board.size.height) * 0.6)
 		for i in 1...preferences.numberOfAnts {
 			let x = Int(arc4random_uniform(maxX)) + offset.x
 			let y = Int(arc4random_uniform(maxY)) + offset.y
