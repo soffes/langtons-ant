@@ -199,6 +199,7 @@
 				2118738D1F50D8F1005F7DE7 /* Frameworks */,
 				2118738E1F50D8F1005F7DE7 /* Headers */,
 				2118738F1F50D8F1005F7DE7 /* Resources */,
+				218921071F519B6900B03FCE /* Set Version */,
 			);
 			buildRules = (
 			);
@@ -293,6 +294,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		218921071F519B6900B03FCE /* Set Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Version";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/bin/env ruby";
+			shellScript = "git = `sh /etc/profile; which git`.chomp\napp_build = `#{git} rev-list HEAD --count`.chomp.to_i\n`/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion #{app_build}\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"`\nputs \"Updated #{ENV['TARGET_BUILD_DIR']}/#{ENV['INFOPLIST_PATH']}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2118738C1F50D8F1005F7DE7 /* Sources */ = {
