@@ -31,6 +31,10 @@
 		218920FD1F50F26D00B03FCE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FB1F50F26B00B03FCE /* Preferences.swift */; };
 		218920FF1F50F2DB00B03FCE /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FE1F50F2DB00B03FCE /* Speed.swift */; };
 		218921001F50F38200B03FCE /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FE1F50F2DB00B03FCE /* Speed.swift */; };
+		218921021F51034300B03FCE /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218921011F51034300B03FCE /* Preferences.xib */; };
+		218921041F51059C00B03FCE /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218921031F51059C00B03FCE /* PreferencesWindowController.swift */; };
+		218921051F51060600B03FCE /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218921031F51059C00B03FCE /* PreferencesWindowController.swift */; };
+		218921061F51060600B03FCE /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218921011F51034300B03FCE /* Preferences.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,8 @@
 		218920EB1F50F1BD00B03FCE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		218920FB1F50F26B00B03FCE /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		218920FE1F50F2DB00B03FCE /* Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		218921011F51034300B03FCE /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		218921031F51059C00B03FCE /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 				218920F91F50F20B00B03FCE /* Views */,
 				218920FA1F50F21200B03FCE /* Models */,
 				218920FB1F50F26B00B03FCE /* Preferences.swift */,
+				218921031F51059C00B03FCE /* PreferencesWindowController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				218920D91F50F1B900B03FCE /* Info.plist */,
+				218921011F51034300B03FCE /* Preferences.xib */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218921021F51034300B03FCE /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				218920EE1F50F1BD00B03FCE /* Main.storyboard in Resources */,
+				218921061F51060600B03FCE /* Preferences.xib in Resources */,
 				218920EF1F50F1BD00B03FCE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				218920DD1F50F1B900B03FCE /* Size.swift in Sources */,
+				218921041F51059C00B03FCE /* PreferencesWindowController.swift in Sources */,
 				218920DE1F50F1B900B03FCE /* Point.swift in Sources */,
 				218920DC1F50F1B900B03FCE /* BoardView.swift in Sources */,
 				218920FF1F50F2DB00B03FCE /* Speed.swift in Sources */,
@@ -315,6 +326,7 @@
 				218920F21F50F1D400B03FCE /* Board.swift in Sources */,
 				218920F51F50F1D400B03FCE /* Point.swift in Sources */,
 				218920FD1F50F26D00B03FCE /* Preferences.swift in Sources */,
+				218921051F51060600B03FCE /* PreferencesWindowController.swift in Sources */,
 				218920F41F50F1D400B03FCE /* Size.swift in Sources */,
 				218920EC1F50F1BD00B03FCE /* PreviewWindowController.swift in Sources */,
 				218920F61F50F1D400B03FCE /* Ant.swift in Sources */,

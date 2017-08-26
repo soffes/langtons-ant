@@ -22,10 +22,10 @@ final class BoardView: NSView {
 		}
 	}
 
-	var scale: CGFloat = 10 {
-		didSet {
-			invalidateIntrinsicContentSize()
-		}
+	static var scale: CGFloat = 10
+
+	private var scale: CGFloat {
+		return type(of: self).scale
 	}
 
 	var theme: Theme {
