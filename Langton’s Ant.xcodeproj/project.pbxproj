@@ -27,6 +27,10 @@
 		218920F61F50F1D400B03FCE /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D51F50F1B900B03FCE /* Ant.swift */; };
 		218920F71F50F1D400B03FCE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D61F50F1B900B03FCE /* Theme.swift */; };
 		218920F81F50F1D400B03FCE /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D71F50F1B900B03FCE /* Direction.swift */; };
+		218920FC1F50F26B00B03FCE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FB1F50F26B00B03FCE /* Preferences.swift */; };
+		218920FD1F50F26D00B03FCE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FB1F50F26B00B03FCE /* Preferences.swift */; };
+		218920FF1F50F2DB00B03FCE /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FE1F50F2DB00B03FCE /* Speed.swift */; };
+		218921001F50F38200B03FCE /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FE1F50F2DB00B03FCE /* Speed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,8 @@
 		218920E91F50F1BD00B03FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		218920EA1F50F1BD00B03FCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		218920EB1F50F1BD00B03FCE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218920FB1F50F26B00B03FCE /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		218920FE1F50F2DB00B03FCE /* Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +112,9 @@
 		218920CF1F50F1B900B03FCE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				218920D01F50F1B900B03FCE /* LangtonsAntView.swift */,
-				218920D11F50F1B900B03FCE /* Board.swift */,
-				218920D21F50F1B900B03FCE /* BoardView.swift */,
-				218920D31F50F1B900B03FCE /* Size.swift */,
-				218920D41F50F1B900B03FCE /* Point.swift */,
-				218920D51F50F1B900B03FCE /* Ant.swift */,
-				218920D61F50F1B900B03FCE /* Theme.swift */,
-				218920D71F50F1B900B03FCE /* Direction.swift */,
+				218920F91F50F20B00B03FCE /* Views */,
+				218920FA1F50F21200B03FCE /* Models */,
+				218920FB1F50F26B00B03FCE /* Preferences.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -129,8 +130,8 @@
 		218920E31F50F1BD00B03FCE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				218920E41F50F1BD00B03FCE /* PreviewWindowController.swift */,
 				218920E51F50F1BD00B03FCE /* AppDelegate.swift */,
+				218920E41F50F1BD00B03FCE /* PreviewWindowController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -138,12 +139,35 @@
 		218920E61F50F1BD00B03FCE /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				218920E71F50F1BD00B03FCE /* Preview.entitlements */,
 				218920E81F50F1BD00B03FCE /* Main.storyboard */,
 				218920EA1F50F1BD00B03FCE /* Images.xcassets */,
+				218920E71F50F1BD00B03FCE /* Preview.entitlements */,
 				218920EB1F50F1BD00B03FCE /* Info.plist */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		218920F91F50F20B00B03FCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				218920D01F50F1B900B03FCE /* LangtonsAntView.swift */,
+				218920D21F50F1B900B03FCE /* BoardView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		218920FA1F50F21200B03FCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				218920D11F50F1B900B03FCE /* Board.swift */,
+				218920D31F50F1B900B03FCE /* Size.swift */,
+				218920D41F50F1B900B03FCE /* Point.swift */,
+				218920D51F50F1B900B03FCE /* Ant.swift */,
+				218920D61F50F1B900B03FCE /* Theme.swift */,
+				218920D71F50F1B900B03FCE /* Direction.swift */,
+				218920FE1F50F2DB00B03FCE /* Speed.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,11 +292,13 @@
 				218920DD1F50F1B900B03FCE /* Size.swift in Sources */,
 				218920DE1F50F1B900B03FCE /* Point.swift in Sources */,
 				218920DC1F50F1B900B03FCE /* BoardView.swift in Sources */,
+				218920FF1F50F2DB00B03FCE /* Speed.swift in Sources */,
 				218920E11F50F1B900B03FCE /* Direction.swift in Sources */,
 				218920DF1F50F1B900B03FCE /* Ant.swift in Sources */,
 				218920DB1F50F1B900B03FCE /* Board.swift in Sources */,
 				218920DA1F50F1B900B03FCE /* LangtonsAntView.swift in Sources */,
 				218920E01F50F1B900B03FCE /* Theme.swift in Sources */,
+				218920FC1F50F26B00B03FCE /* Preferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +309,12 @@
 				218920F71F50F1D400B03FCE /* Theme.swift in Sources */,
 				218920F11F50F1D400B03FCE /* LangtonsAntView.swift in Sources */,
 				218920ED1F50F1BD00B03FCE /* AppDelegate.swift in Sources */,
+				218921001F50F38200B03FCE /* Speed.swift in Sources */,
 				218920F81F50F1D400B03FCE /* Direction.swift in Sources */,
 				218920F31F50F1D400B03FCE /* BoardView.swift in Sources */,
 				218920F21F50F1D400B03FCE /* Board.swift in Sources */,
 				218920F51F50F1D400B03FCE /* Point.swift in Sources */,
+				218920FD1F50F26D00B03FCE /* Preferences.swift in Sources */,
 				218920F41F50F1D400B03FCE /* Size.swift in Sources */,
 				218920EC1F50F1BD00B03FCE /* PreviewWindowController.swift in Sources */,
 				218920F61F50F1D400B03FCE /* Ant.swift in Sources */,

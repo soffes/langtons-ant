@@ -12,6 +12,13 @@ final class LangtonsAntView: ScreenSaverView {
 
 	// MARK: - Properties
 
+	private var speed: Speed {
+		didSet {
+			stopAnimation()
+			startAnimation()
+		}
+	}
+
 	private var boardView: BoardView? {
 		willSet {
 			boardView?.removeFromSuperview()
@@ -19,6 +26,21 @@ final class LangtonsAntView: ScreenSaverView {
 	}
 
 	private var previousSize: CGSize = .zero
+
+	private let preferences = Preferences()
+
+
+	// MARK: - Initializers
+
+	override init?(frame: NSRect, isPreview: Bool) {
+		speed = preferences.speed
+		super.init(frame: frame, isPreview: isPreview)
+	}
+	
+	required init?(coder: NSCoder) {
+		speed = preferences.speed
+		super.init(coder: coder)
+	}
 
 
 	// MARK: - NSView
@@ -36,7 +58,7 @@ final class LangtonsAntView: ScreenSaverView {
 	override func draw(_ rect: NSRect) {
 		guard let context = NSGraphicsContext.current()?.cgContext else { return }
 
-		context.setFillColor(NSColor.white.cgColor)
+		context.setFillColor(boardView?.theme.backgroundColor.cgColor ?? NSColor.black.cgColor)
 		context.fill(bounds)
 	}
 
@@ -44,12 +66,15 @@ final class LangtonsAntView: ScreenSaverView {
 	// MARK: - ScreenSaverView
 
 	override func animateOneFrame() {
-		boardView?.board.tick()
+		for _ in 0..<speed.ticksPerFrame {
+			boardView?.board.tick()
+		}
 	}
 
 	override var animationTimeInterval: TimeInterval {
 		get {
-			return 1 / 60
+			Swift.print("animationTimeInterval: \(speed.animationTimeInterval)")
+			return speed.animationTimeInterval
 		}
 
 		set {}
@@ -71,7 +96,7 @@ final class LangtonsAntView: ScreenSaverView {
 		let offset = Point(x: Int(Double(board.size.width) * 0.2), y: Int(Double(board.size.height) * 0.2))
 		let maxX = UInt32(Double(board.size.width) * 0.6)
 		let maxY = UInt32(Double(board.size.width) * 0.6)
-		for i in 1...9 {
+		for i in 1...preferences.numberOfAnts {
 			let x = Int(arc4random_uniform(maxX)) + offset.x
 			let y = Int(arc4random_uniform(maxY)) + offset.y
 			board.addAnt(named: "Ant \(i)", at: Point(x: x, y: y))
@@ -91,6 +116,7 @@ final class LangtonsAntView: ScreenSaverView {
 		board.noise = noise
 
 		let boardView = BoardView(board: board, theme: DarkTheme())
+		boardView.theme = preferences.darkMode ? DarkTheme() : LightTheme()
 
 		// Add the board as a subview
 		boardView.translatesAutoresizingMaskIntoConstraints = false
