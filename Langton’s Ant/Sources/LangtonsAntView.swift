@@ -8,16 +8,11 @@
 
 import ScreenSaver
 
-final class LangtonsAntView: ScreenSaverView {
+@objc public final class LangtonsAntView: ScreenSaverView {
 
 	// MARK: - Properties
 
-	private var speed: Speed = .normal {
-		didSet {
-			stopAnimation()
-			startAnimation()
-		}
-	}
+	private var speed: Speed = .normal
 
 	private var boardView: BoardView? {
 		willSet {
@@ -29,16 +24,21 @@ final class LangtonsAntView: ScreenSaverView {
 
 	private let preferences = Preferences()
 
-	private let preferencesWindowController = PreferencesWindowController()
+	private var preferencesWindowController: PreferencesWindowController? {
+		willSet {
+			preferencesWindowController?.close()
+		}
+	}
 
+	
 	// MARK: - Initializers
 
-	override init?(frame: NSRect, isPreview: Bool) {
+	public override init?(frame: NSRect, isPreview: Bool) {
 		super.init(frame: frame, isPreview: isPreview)
 		initialize()
 	}
 	
-	required init?(coder: NSCoder) {
+	public required init?(coder: NSCoder) {
 		super.init(coder: coder)
 		initialize()
 	}
@@ -46,17 +46,17 @@ final class LangtonsAntView: ScreenSaverView {
 
 	// MARK: - NSView
 
-	override func viewDidMoveToWindow() {
+	public override func viewDidMoveToWindow() {
 		super.viewDidMoveToWindow()
 		setupBoard()
 	}
 
-	override func resizeSubviews(withOldSize oldSize: NSSize) {
+	public override func resizeSubviews(withOldSize oldSize: NSSize) {
 		super.resizeSubviews(withOldSize: oldSize)
 		setupBoard()
 	}
 
-	override func draw(_ rect: NSRect) {
+	public override func draw(_ rect: NSRect) {
 		guard let context = NSGraphicsContext.current()?.cgContext else { return }
 
 		context.setFillColor(boardView?.theme.backgroundColor.cgColor ?? NSColor.black.cgColor)
@@ -65,26 +65,33 @@ final class LangtonsAntView: ScreenSaverView {
 
 
 	// MARK: - ScreenSaverView
-
-	override func animateOneFrame() {
-		for _ in 0..<speed.ticksPerFrame {
-			boardView?.board.tick()
-		}
-	}
-
-	override var animationTimeInterval: TimeInterval {
+	
+	public override var animationTimeInterval: TimeInterval {
 		get {
-			Swift.print("animationTimeInterval: \(speed.animationTimeInterval)")
-			return speed.animationTimeInterval
+			return 1 / 60
 		}
 
 		set {}
 	}
 
-	override func configureSheet() -> NSWindow? {
-		preferencesWindowController.loadWindow() 
-		return preferencesWindowController.window
+	public override func animateOneFrame() {
+		for _ in 0..<speed.ticksPerFrame {
+			boardView?.board.tick()
+		}
 	}
+
+	public override func configureSheet() -> NSWindow? {
+		let windowController = PreferencesWindowController()
+		windowController.loadWindow()
+		let window = windowController.window
+		preferencesWindowController = windowController
+		return window
+	}
+	
+	public override func hasConfigureSheet() -> Bool {
+		return true
+	}
+	
 
 	// MARK: - Private
 
@@ -95,7 +102,9 @@ final class LangtonsAntView: ScreenSaverView {
 
 		previousSize = bounds.size
 
-		var board = Board(size: Size(width: Int(previousSize.width / BoardView.scale), height: Int(previousSize.height / BoardView.scale)))
+		let scale: CGFloat = isPreview ? 2 : 10
+
+		var board = Board(size: Size(width: Int(previousSize.width / scale), height: Int(previousSize.height / scale)))
 
 		// Create 9 ants
 		let offset = Point(x: Int(Double(board.size.width) * 0.2), y: Int(Double(board.size.height) * 0.2))
@@ -122,8 +131,7 @@ final class LangtonsAntView: ScreenSaverView {
 			board.noise = noise
 		}
 
-		let boardView = BoardView(board: board, theme: DarkTheme())
-		themeDidChange()
+		let boardView = BoardView(board: board, scale: scale)
 
 		// Add the board as a subview
 		boardView.translatesAutoresizingMaskIntoConstraints = false
@@ -136,6 +144,7 @@ final class LangtonsAntView: ScreenSaverView {
 		])
 
 		self.boardView = boardView
+		themeDidChange()
 	}
 
 	@objc private func resetBoard() {

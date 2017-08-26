@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindowController" customModule="Langton_s_Ant" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindowController" customModule="LangtonsAnt" customModuleProvider="target">
             <connections>
                 <outlet property="window" destination="QvC-M9-y7g" id="47D-D8-onU"/>
             </connections>
@@ -23,9 +23,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-zh-tbF">
-                        <rect key="frame" x="94" y="138" width="96" height="25"/>
+                        <rect key="frame" x="94" y="138" width="96" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" state="on" alignment="left" minValue="1" maxValue="5" doubleValue="3" tickMarkPosition="below" numberOfTickMarks="5" allowsTickMarkValuesOnly="YES" sliderType="linear" id="Rpp-o5-znL"/>
+                        <sliderCell key="cell" state="on" alignment="left" minValue="2" maxValue="5" doubleValue="2" tickMarkPosition="below" numberOfTickMarks="3" allowsTickMarkValuesOnly="YES" sliderType="linear" id="Rpp-o5-znL"/>
                         <connections>
                             <binding destination="jUq-C4-PQ2" name="value" keyPath="self.speedInteger" id="E7v-UM-QjO"/>
                         </connections>
@@ -51,7 +51,7 @@
                     <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MaK-Qu-RhV">
                         <rect key="frame" x="94" y="87" width="96" height="19"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" state="on" alignment="left" maxValue="50" doubleValue="10" tickMarkPosition="above" sliderType="linear" id="FIe-Q0-S97"/>
+                        <sliderCell key="cell" state="on" alignment="left" maxValue="35" doubleValue="10" tickMarkPosition="above" sliderType="linear" id="FIe-Q0-S97"/>
                         <connections>
                             <binding destination="jUq-C4-PQ2" name="value" keyPath="self.noiseAmount" id="smG-cW-Yy2"/>
                         </connections>
@@ -95,13 +95,13 @@ DQ
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="orderOut:" target="QvC-M9-y7g" id="c8F-a5-TOR"/>
+                            <action selector="close:" target="-2" id="8ar-Qg-lMI"/>
                         </connections>
                     </button>
                 </subviews>
             </view>
             <point key="canvasLocation" x="30" y="104.5"/>
         </window>
-        <customObject id="jUq-C4-PQ2" customClass="Preferences" customModule="Langton_s_Ant" customModuleProvider="target"/>
+        <customObject id="jUq-C4-PQ2" customClass="Preferences" customModule="LangtonsAnt" customModuleProvider="target"/>
     </objects>
 </document>

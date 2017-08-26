@@ -40,13 +40,11 @@ final class Preferences: NSObject {
 
 	var speed: Speed {
 		get {
-			return Speed(rawValue: defaults.integer(forKey: Key.speed.rawValue)) ?? .normal
+			return Speed(rawValue: speedInteger) ?? .normal
 		}
 
 		set {
-			let key = Key.speed
-			defaults.set(newValue.rawValue, forKey: key.rawValue)
-			NotificationCenter.default.post(name: key.notificationName, object: nil)
+			speedInteger = newValue.rawValue
 		}
 	}
 
@@ -59,7 +57,10 @@ final class Preferences: NSObject {
 		set {
 			let key = Key.speed
 			let speed = Speed(rawValue: newValue) ?? .normal
+
 			defaults.set(speed.rawValue, forKey: key.rawValue)
+			defaults.synchronize()
+
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
 	}
@@ -71,8 +72,11 @@ final class Preferences: NSObject {
 
 		set {
 			let key = Key.noiseAmount
-			let value = min(50, max(0, newValue))
+			let value = min(35, max(0, newValue))
+
 			defaults.set(value, forKey: key.rawValue)
+			defaults.synchronize()
+
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
 	}
@@ -84,7 +88,10 @@ final class Preferences: NSObject {
 
 		set {
 			let key = Key.numberOfAnts
+
 			defaults.set(min(9, max(1, newValue)), forKey: key.rawValue)
+			defaults.synchronize()
+
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
 	}
@@ -96,19 +103,27 @@ final class Preferences: NSObject {
 
 		set {
 			let key = Key.darkMode
+
 			defaults.set(newValue, forKey: key.rawValue)
+			defaults.synchronize()
+
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
 	}
 
-	private let defaults: UserDefaults = {
+	private static let defaults: UserDefaults = {
 		let bundleIdentifier = Bundle(for: Preferences.self).bundleIdentifier!
 		let defaults = ScreenSaverDefaults(forModuleWithName: bundleIdentifier) ?? UserDefaults.standard
 		defaults.register(defaults: [
 			Key.speed.rawValue: Speed.normal.rawValue,
 			Key.numberOfAnts.rawValue: 4,
-			Key.noiseAmount.rawValue: 10
+			Key.noiseAmount.rawValue: 10,
+			Key.darkMode.rawValue: true
 		])
 		return defaults
 	}()
+
+	private var defaults: UserDefaults {
+		return type(of: self).defaults
+	}
 }

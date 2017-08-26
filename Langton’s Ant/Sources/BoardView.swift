@@ -22,11 +22,7 @@ final class BoardView: NSView {
 		}
 	}
 
-	static var scale: CGFloat = 10
-
-	private var scale: CGFloat {
-		return type(of: self).scale
-	}
+	private let scale: CGFloat
 
 	var theme: Theme {
 		didSet {
@@ -37,8 +33,9 @@ final class BoardView: NSView {
 
 	// MARK: - Initializers
 
-	init(board: Board, theme: Theme = LightTheme()) {
+	init(board: Board, scale: CGFloat, theme: Theme = LightTheme()) {
 		self.board = board
+		self.scale = scale
 		self.theme = theme
 		super.init(frame: .zero)
 	}

@@ -9,22 +9,9 @@
 import Foundation
 
 enum Speed: Int {
-	case crawl
-	case slow
-	case normal
+	case normal = 2
 	case fast
 	case insane
-
-	var animationTimeInterval: TimeInterval {
-		switch self {
-		case .crawl:
-			return 1 / 12
-		case .slow:
-			return 1 / 30
-		default:
-			return 1 / 60
-		}
-	}
 
 	var ticksPerFrame: UInt {
 		switch self {
