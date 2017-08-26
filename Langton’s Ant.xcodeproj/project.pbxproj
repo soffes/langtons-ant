@@ -7,46 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		211873C81F50D939005F7DE7 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873C41F50D939005F7DE7 /* BoardView.swift */; };
-		211873CA1F50D939005F7DE7 /* LangtonsAntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873C61F50D939005F7DE7 /* LangtonsAntView.swift */; };
-		211873CE1F50D94E005F7DE7 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873C41F50D939005F7DE7 /* BoardView.swift */; };
-		211873CF1F50D94E005F7DE7 /* LangtonsAntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873C61F50D939005F7DE7 /* LangtonsAntView.swift */; };
-		211873D41F50D959005F7DE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873D01F50D959005F7DE7 /* AppDelegate.swift */; };
-		211873D51F50D959005F7DE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211873D11F50D959005F7DE7 /* Images.xcassets */; };
-		211873D71F50D959005F7DE7 /* PreviewWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873D31F50D959005F7DE7 /* PreviewWindowController.swift */; };
-		211873DA1F50D95C005F7DE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211873D81F50D95C005F7DE7 /* Main.storyboard */; };
-		211873EC1F50ED3B005F7DE7 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E71F50ED3B005F7DE7 /* Ant.swift */; };
-		211873ED1F50ED3B005F7DE7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E81F50ED3B005F7DE7 /* Board.swift */; };
-		211873EE1F50ED3B005F7DE7 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E91F50ED3B005F7DE7 /* Direction.swift */; };
-		211873EF1F50ED3B005F7DE7 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873EA1F50ED3B005F7DE7 /* Point.swift */; };
-		211873F01F50ED3B005F7DE7 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873EB1F50ED3B005F7DE7 /* Size.swift */; };
-		211873F11F50EE61005F7DE7 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E71F50ED3B005F7DE7 /* Ant.swift */; };
-		211873F21F50EE61005F7DE7 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E81F50ED3B005F7DE7 /* Board.swift */; };
-		211873F31F50EE61005F7DE7 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873E91F50ED3B005F7DE7 /* Direction.swift */; };
-		211873F41F50EE61005F7DE7 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873EA1F50ED3B005F7DE7 /* Point.swift */; };
-		211873F51F50EE61005F7DE7 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873EB1F50ED3B005F7DE7 /* Size.swift */; };
-		211873F91F50EF83005F7DE7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873F81F50EF83005F7DE7 /* Theme.swift */; };
-		211873FA1F50F024005F7DE7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211873F81F50EF83005F7DE7 /* Theme.swift */; };
+		218920DA1F50F1B900B03FCE /* LangtonsAntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D01F50F1B900B03FCE /* LangtonsAntView.swift */; };
+		218920DB1F50F1B900B03FCE /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D11F50F1B900B03FCE /* Board.swift */; };
+		218920DC1F50F1B900B03FCE /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D21F50F1B900B03FCE /* BoardView.swift */; };
+		218920DD1F50F1B900B03FCE /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D31F50F1B900B03FCE /* Size.swift */; };
+		218920DE1F50F1B900B03FCE /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D41F50F1B900B03FCE /* Point.swift */; };
+		218920DF1F50F1B900B03FCE /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D51F50F1B900B03FCE /* Ant.swift */; };
+		218920E01F50F1B900B03FCE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D61F50F1B900B03FCE /* Theme.swift */; };
+		218920E11F50F1B900B03FCE /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D71F50F1B900B03FCE /* Direction.swift */; };
+		218920EC1F50F1BD00B03FCE /* PreviewWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920E41F50F1BD00B03FCE /* PreviewWindowController.swift */; };
+		218920ED1F50F1BD00B03FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920E51F50F1BD00B03FCE /* AppDelegate.swift */; };
+		218920EE1F50F1BD00B03FCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218920E81F50F1BD00B03FCE /* Main.storyboard */; };
+		218920EF1F50F1BD00B03FCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218920EA1F50F1BD00B03FCE /* Images.xcassets */; };
+		218920F11F50F1D400B03FCE /* LangtonsAntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D01F50F1B900B03FCE /* LangtonsAntView.swift */; };
+		218920F21F50F1D400B03FCE /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D11F50F1B900B03FCE /* Board.swift */; };
+		218920F31F50F1D400B03FCE /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D21F50F1B900B03FCE /* BoardView.swift */; };
+		218920F41F50F1D400B03FCE /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D31F50F1B900B03FCE /* Size.swift */; };
+		218920F51F50F1D400B03FCE /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D41F50F1B900B03FCE /* Point.swift */; };
+		218920F61F50F1D400B03FCE /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D51F50F1B900B03FCE /* Ant.swift */; };
+		218920F71F50F1D400B03FCE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D61F50F1B900B03FCE /* Theme.swift */; };
+		218920F81F50F1D400B03FCE /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D71F50F1B900B03FCE /* Direction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		211873911F50D8F1005F7DE7 /* Langton’s Ant.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Langton’s Ant.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		211873A21F50D8FE005F7DE7 /* Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preview.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		211873C41F50D939005F7DE7 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
-		211873C51F50D939005F7DE7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		211873C61F50D939005F7DE7 /* LangtonsAntView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangtonsAntView.swift; sourceTree = "<group>"; };
-		211873D01F50D959005F7DE7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		211873D11F50D959005F7DE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		211873D21F50D959005F7DE7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		211873D31F50D959005F7DE7 /* PreviewWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewWindowController.swift; sourceTree = "<group>"; };
-		211873D91F50D95C005F7DE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		211873E61F50ECA2005F7DE7 /* Preview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Preview.entitlements; sourceTree = "<group>"; };
-		211873E71F50ED3B005F7DE7 /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
-		211873E81F50ED3B005F7DE7 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
-		211873E91F50ED3B005F7DE7 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		211873EA1F50ED3B005F7DE7 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		211873EB1F50ED3B005F7DE7 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
-		211873F81F50EF83005F7DE7 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		218920D01F50F1B900B03FCE /* LangtonsAntView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangtonsAntView.swift; sourceTree = "<group>"; };
+		218920D11F50F1B900B03FCE /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		218920D21F50F1B900B03FCE /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		218920D31F50F1B900B03FCE /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		218920D41F50F1B900B03FCE /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		218920D51F50F1B900B03FCE /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
+		218920D61F50F1B900B03FCE /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		218920D71F50F1B900B03FCE /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		218920D91F50F1B900B03FCE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218920E41F50F1BD00B03FCE /* PreviewWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewWindowController.swift; sourceTree = "<group>"; };
+		218920E51F50F1BD00B03FCE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		218920E71F50F1BD00B03FCE /* Preview.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Preview.entitlements; sourceTree = "<group>"; };
+		218920E91F50F1BD00B03FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		218920EA1F50F1BD00B03FCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		218920EB1F50F1BD00B03FCE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,9 +88,8 @@
 		211873931F50D8F1005F7DE7 /* Langton’s Ant */ = {
 			isa = PBXGroup;
 			children = (
-				211873F71F50EF7B005F7DE7 /* Views */,
-				211873F61F50EF74005F7DE7 /* Models */,
-				211873C51F50D939005F7DE7 /* Info.plist */,
+				218920CF1F50F1B900B03FCE /* Sources */,
+				218920D81F50F1B900B03FCE /* Support */,
 			);
 			path = "Langton’s Ant";
 			sourceTree = "<group>";
@@ -98,36 +97,53 @@
 		211873A31F50D8FE005F7DE7 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
-				211873D01F50D959005F7DE7 /* AppDelegate.swift */,
-				211873D31F50D959005F7DE7 /* PreviewWindowController.swift */,
-				211873D81F50D95C005F7DE7 /* Main.storyboard */,
-				211873D11F50D959005F7DE7 /* Images.xcassets */,
-				211873D21F50D959005F7DE7 /* Info.plist */,
-				211873E61F50ECA2005F7DE7 /* Preview.entitlements */,
+				218920E31F50F1BD00B03FCE /* Sources */,
+				218920E61F50F1BD00B03FCE /* Support */,
 			);
 			path = Preview;
 			sourceTree = "<group>";
 		};
-		211873F61F50EF74005F7DE7 /* Models */ = {
+		218920CF1F50F1B900B03FCE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				211873E71F50ED3B005F7DE7 /* Ant.swift */,
-				211873E81F50ED3B005F7DE7 /* Board.swift */,
-				211873E91F50ED3B005F7DE7 /* Direction.swift */,
-				211873EA1F50ED3B005F7DE7 /* Point.swift */,
-				211873EB1F50ED3B005F7DE7 /* Size.swift */,
-				211873F81F50EF83005F7DE7 /* Theme.swift */,
+				218920D01F50F1B900B03FCE /* LangtonsAntView.swift */,
+				218920D11F50F1B900B03FCE /* Board.swift */,
+				218920D21F50F1B900B03FCE /* BoardView.swift */,
+				218920D31F50F1B900B03FCE /* Size.swift */,
+				218920D41F50F1B900B03FCE /* Point.swift */,
+				218920D51F50F1B900B03FCE /* Ant.swift */,
+				218920D61F50F1B900B03FCE /* Theme.swift */,
+				218920D71F50F1B900B03FCE /* Direction.swift */,
 			);
-			name = Models;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		211873F71F50EF7B005F7DE7 /* Views */ = {
+		218920D81F50F1B900B03FCE /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				211873C61F50D939005F7DE7 /* LangtonsAntView.swift */,
-				211873C41F50D939005F7DE7 /* BoardView.swift */,
+				218920D91F50F1B900B03FCE /* Info.plist */,
 			);
-			name = Views;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		218920E31F50F1BD00B03FCE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				218920E41F50F1BD00B03FCE /* PreviewWindowController.swift */,
+				218920E51F50F1BD00B03FCE /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		218920E61F50F1BD00B03FCE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				218920E71F50F1BD00B03FCE /* Preview.entitlements */,
+				218920E81F50F1BD00B03FCE /* Main.storyboard */,
+				218920EA1F50F1BD00B03FCE /* Images.xcassets */,
+				218920EB1F50F1BD00B03FCE /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +253,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211873DA1F50D95C005F7DE7 /* Main.storyboard in Resources */,
-				211873D51F50D959005F7DE7 /* Images.xcassets in Resources */,
+				218920EE1F50F1BD00B03FCE /* Main.storyboard in Resources */,
+				218920EF1F50F1BD00B03FCE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,14 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211873EC1F50ED3B005F7DE7 /* Ant.swift in Sources */,
-				211873F91F50EF83005F7DE7 /* Theme.swift in Sources */,
-				211873F01F50ED3B005F7DE7 /* Size.swift in Sources */,
-				211873CA1F50D939005F7DE7 /* LangtonsAntView.swift in Sources */,
-				211873EF1F50ED3B005F7DE7 /* Point.swift in Sources */,
-				211873ED1F50ED3B005F7DE7 /* Board.swift in Sources */,
-				211873EE1F50ED3B005F7DE7 /* Direction.swift in Sources */,
-				211873C81F50D939005F7DE7 /* BoardView.swift in Sources */,
+				218920DD1F50F1B900B03FCE /* Size.swift in Sources */,
+				218920DE1F50F1B900B03FCE /* Point.swift in Sources */,
+				218920DC1F50F1B900B03FCE /* BoardView.swift in Sources */,
+				218920E11F50F1B900B03FCE /* Direction.swift in Sources */,
+				218920DF1F50F1B900B03FCE /* Ant.swift in Sources */,
+				218920DB1F50F1B900B03FCE /* Board.swift in Sources */,
+				218920DA1F50F1B900B03FCE /* LangtonsAntView.swift in Sources */,
+				218920E01F50F1B900B03FCE /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,26 +280,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211873F41F50EE61005F7DE7 /* Point.swift in Sources */,
-				211873F31F50EE61005F7DE7 /* Direction.swift in Sources */,
-				211873D41F50D959005F7DE7 /* AppDelegate.swift in Sources */,
-				211873CF1F50D94E005F7DE7 /* LangtonsAntView.swift in Sources */,
-				211873F51F50EE61005F7DE7 /* Size.swift in Sources */,
-				211873F21F50EE61005F7DE7 /* Board.swift in Sources */,
-				211873D71F50D959005F7DE7 /* PreviewWindowController.swift in Sources */,
-				211873FA1F50F024005F7DE7 /* Theme.swift in Sources */,
-				211873F11F50EE61005F7DE7 /* Ant.swift in Sources */,
-				211873CE1F50D94E005F7DE7 /* BoardView.swift in Sources */,
+				218920F71F50F1D400B03FCE /* Theme.swift in Sources */,
+				218920F11F50F1D400B03FCE /* LangtonsAntView.swift in Sources */,
+				218920ED1F50F1BD00B03FCE /* AppDelegate.swift in Sources */,
+				218920F81F50F1D400B03FCE /* Direction.swift in Sources */,
+				218920F31F50F1D400B03FCE /* BoardView.swift in Sources */,
+				218920F21F50F1D400B03FCE /* Board.swift in Sources */,
+				218920F51F50F1D400B03FCE /* Point.swift in Sources */,
+				218920F41F50F1D400B03FCE /* Size.swift in Sources */,
+				218920EC1F50F1BD00B03FCE /* PreviewWindowController.swift in Sources */,
+				218920F61F50F1D400B03FCE /* Ant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		211873D81F50D95C005F7DE7 /* Main.storyboard */ = {
+		218920E81F50F1BD00B03FCE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				211873D91F50D95C005F7DE7 /* Base */,
+				218920E91F50F1BD00B03FCE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -387,7 +403,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LHDXBG4XBK;
-				INFOPLIST_FILE = "Langton’s Ant/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Langton’s Ant/Support/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.langtons-ant";
@@ -405,7 +421,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LHDXBG4XBK;
-				INFOPLIST_FILE = "Langton’s Ant/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Langton’s Ant/Support/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.langtons-ant";
@@ -419,10 +435,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Preview/Preview.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Preview/Support/Preview.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LHDXBG4XBK;
-				INFOPLIST_FILE = Preview/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Preview/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.langtons-ant.preview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,10 +452,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Preview/Preview.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Preview/Support/Preview.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LHDXBG4XBK;
-				INFOPLIST_FILE = Preview/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Preview/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.samsoffes.langtons-ant.preview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
