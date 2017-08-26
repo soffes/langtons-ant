@@ -12,7 +12,7 @@ final class LangtonsAntView: ScreenSaverView {
 
 	// MARK: - Properties
 
-	private var speed: Speed {
+	private var speed: Speed = .normal {
 		didSet {
 			stopAnimation()
 			startAnimation()
@@ -33,13 +33,13 @@ final class LangtonsAntView: ScreenSaverView {
 	// MARK: - Initializers
 
 	override init?(frame: NSRect, isPreview: Bool) {
-		speed = preferences.speed
 		super.init(frame: frame, isPreview: isPreview)
+		initialize()
 	}
 	
 	required init?(coder: NSCoder) {
-		speed = preferences.speed
 		super.init(coder: coder)
+		initialize()
 	}
 
 
@@ -129,5 +129,21 @@ final class LangtonsAntView: ScreenSaverView {
 		])
 
 		self.boardView = boardView
+	}
+
+	@objc private func resetBoard() {
+		previousSize = .zero
+		setupBoard()
+	}
+
+	@objc private func speedDidChange() {
+		speed = preferences.speed
+	}
+
+	private func initialize() {
+		speedDidChange()
+
+		NotificationCenter.default.addObserver(self, selector: #selector(resetBoard), name: Preferences.boardDidChange, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(speedDidChange), name: Preferences.speedDidChange, object: nil)
 	}
 }

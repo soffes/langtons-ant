@@ -13,13 +13,21 @@ final class Preferences: NSObject {
 
 	// MARK: - Types
 
+	static let boardDidChange = Notification.Name(rawValue: "Preferences.boardDidChange")
+	static let speedDidChange = Notification.Name(rawValue: "Preferences.speedDidChange")
+
 	private enum Key: String {
 		case speed
 		case numberOfAnts
 		case darkMode
 
 		var notificationName: Notification.Name {
-			return Notification.Name(rawValue: "Preferences.\(rawValue)DidChange")
+			switch self {
+			case .speed:
+				return Preferences.speedDidChange
+			default:
+				return Preferences.boardDidChange
+			}
 		}
 	}
 
