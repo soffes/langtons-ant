@@ -20,8 +20,3 @@ It’s fascinating because it only uses the following two rules to generate ever
 ## Preferences
 
 Don’t forget to check out “Screen Saver Options…” in System Preferences. You can change the model and style to your liking.
-
-
-## Building
-
-Xcode 8.3 is required since Langton’s Ant is written in Swift 3.
