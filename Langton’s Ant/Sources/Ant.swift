@@ -1,11 +1,3 @@
-//
-//  Ant.swift
-//  Langton
-//
-//  Created by Sam Soffes on 8/25/17.
-//  Copyright © 2017 Sam Soffes. All rights reserved.
-//
-
 public struct Ant {
 
 	// MARK: - Properties
@@ -13,7 +5,6 @@ public struct Ant {
 	public let name: String
 	public var position: Point
 	public var heading: Direction
-
 
 	// MARK: - Turning
 
@@ -24,7 +15,6 @@ public struct Ant {
 	public mutating func turnRight() {
 		heading = heading.turningRight
 	}
-
 
 	// MARK: - Moving
 

@@ -1,30 +1,17 @@
-//
-//  Board.swift
-//  Langton
-//
-//  Created by Sam Soffes on 8/25/17.
-//  Copyright © 2017 Sam Soffes. All rights reserved.
-//
-
 public struct Board {
 
 	// MARK: - Properties
 
 	public let size: Size
-
 	public private(set) var ants = [Ant]()
-
 	public private(set) var filled = Set<Point>()
-
 	public var noise = Set<Point>()
-
 
 	// MARK: - Initializers
 
 	public init(size: Size) {
 		self.size = size
 	}
-
 
 	// MARK: - Subscript
 
@@ -44,7 +31,6 @@ public struct Board {
 		}
 	}
 
-
 	// MARK: - Adding & Removing Ants
 
 	public mutating func addAnt(named name: String, at point: Point, heading: Direction = .south) {
@@ -56,11 +42,10 @@ public struct Board {
 	}
 
 	public mutating func removeAnt(named name: String) {
-		if let index = ants.index(where: { $0.name == name }) {
+		if let index = ants.firstIndex(where: { $0.name == name }) {
 			ants.remove(at: index)
 		}
 	}
-
 
 	// MARK: - Advancing Time
 	
@@ -89,4 +74,3 @@ public struct Board {
 		}
 	}
 }
-

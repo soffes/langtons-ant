@@ -1,14 +1,7 @@
-//
-//  LangtonsAntView.swift
-//  Langton’s Ant
-//
-//  Created by Sam Soffes on 8/25/17.
-//  Copyright © 2017 Sam Soffes. All rights reserved.
-//
-
 import ScreenSaver
 
-@objc public final class LangtonsAntView: ScreenSaverView {
+@objc
+public final class LangtonsAntView: ScreenSaverView {
 
 	// MARK: - Properties
 
@@ -29,7 +22,6 @@ import ScreenSaver
 			preferencesWindowController?.close()
 		}
 	}
-
 	
 	// MARK: - Initializers
 
@@ -57,22 +49,13 @@ import ScreenSaver
 	}
 
 	public override func draw(_ rect: NSRect) {
-		guard let context = NSGraphicsContext.current()?.cgContext else { return }
+        guard let context = NSGraphicsContext.current?.cgContext else { return }
 
 		context.setFillColor(boardView?.theme.backgroundColor.cgColor ?? NSColor.black.cgColor)
 		context.fill(bounds)
 	}
 
-
 	// MARK: - ScreenSaverView
-	
-	public override var animationTimeInterval: TimeInterval {
-		get {
-			return 1 / 60
-		}
-
-		set {}
-	}
 
 	public override func animateOneFrame() {
 		for _ in 0..<speed.ticksPerFrame {
@@ -80,7 +63,7 @@ import ScreenSaver
 		}
 	}
 
-	public override func configureSheet() -> NSWindow? {
+	public override var configureSheet: NSWindow? {
 		let windowController = PreferencesWindowController()
 		windowController.loadWindow()
 		let window = windowController.window
@@ -88,10 +71,9 @@ import ScreenSaver
 		return window
 	}
 	
-	public override func hasConfigureSheet() -> Bool {
-		return true
+    public override var hasConfigureSheet: Bool {
+		true
 	}
-	
 
 	// MARK: - Private
 
@@ -147,16 +129,20 @@ import ScreenSaver
 		themeDidChange()
 	}
 
-	@objc private func resetBoard() {
+	@objc
+    private func resetBoard() {
 		previousSize = .zero
 		setupBoard()
 	}
 
-	@objc private func speedDidChange() {
+	@objc
+    private func speedDidChange() {
 		speed = preferences.speed
+        animationTimeInterval = 1.0 / Double(speed.framesPerSecond)
 	}
 
-	@objc private func themeDidChange() {
+	@objc
+    private func themeDidChange() {
 		boardView?.theme = preferences.darkMode ? DarkTheme() : LightTheme()
 		setNeedsDisplay(bounds)
 	}

@@ -1,11 +1,3 @@
-//
-//  Preferences.swift
-//  Langton’s Ant
-//
-//  Created by Sam Soffes on 8/25/17.
-//  Copyright © 2017 Sam Soffes. All rights reserved.
-//
-
 import Foundation
 import ScreenSaver
 
@@ -35,7 +27,6 @@ final class Preferences: NSObject {
 		}
 	}
 
-
 	// MARK: - Properties
 
 	var speed: Speed {
@@ -48,9 +39,10 @@ final class Preferences: NSObject {
 		}
 	}
 
+    @objc
 	var speedInteger: Int {
 		get {
-			let speed = Speed(rawValue: defaults.integer(forKey: Key.speed.rawValue)) ?? .normal
+            let speed = Speed(rawValue: Self.defaults.integer(forKey: Key.speed.rawValue)) ?? .normal
 			return speed.rawValue
 		}
 
@@ -58,54 +50,57 @@ final class Preferences: NSObject {
 			let key = Key.speed
 			let speed = Speed(rawValue: newValue) ?? .normal
 
-			defaults.set(speed.rawValue, forKey: key.rawValue)
-			defaults.synchronize()
+            Self.defaults.set(speed.rawValue, forKey: key.rawValue)
+            Self.defaults.synchronize()
 
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
 	}
 
+    @objc
 	var noiseAmount: Int {
 		get {
-			return defaults.integer(forKey: Key.noiseAmount.rawValue)
+            Self.defaults.integer(forKey: Key.noiseAmount.rawValue)
 		}
 
 		set {
 			let key = Key.noiseAmount
 			let value = min(35, max(0, newValue))
 
-			defaults.set(value, forKey: key.rawValue)
-			defaults.synchronize()
+            Self.defaults.set(value, forKey: key.rawValue)
+            Self.defaults.synchronize()
 
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
 	}
 
+    @objc
 	var numberOfAnts: Int {
 		get {
-			return defaults.integer(forKey: Key.numberOfAnts.rawValue)
+            Self.defaults.integer(forKey: Key.numberOfAnts.rawValue)
 		}
 
 		set {
 			let key = Key.numberOfAnts
 
-			defaults.set(min(9, max(1, newValue)), forKey: key.rawValue)
-			defaults.synchronize()
+            Self.defaults.set(min(9, max(1, newValue)), forKey: key.rawValue)
+            Self.defaults.synchronize()
 
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
 	}
 
+    @objc
 	var darkMode: Bool {
 		get {
-			return defaults.bool(forKey: Key.darkMode.rawValue)
+            Self.defaults.bool(forKey: Key.darkMode.rawValue)
 		}
 
 		set {
 			let key = Key.darkMode
 
-			defaults.set(newValue, forKey: key.rawValue)
-			defaults.synchronize()
+            Self.defaults.set(newValue, forKey: key.rawValue)
+            Self.defaults.synchronize()
 
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
@@ -122,8 +117,4 @@ final class Preferences: NSObject {
 		])
 		return defaults
 	}()
-
-	private var defaults: UserDefaults {
-		return type(of: self).defaults
-	}
 }

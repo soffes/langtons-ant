@@ -1,11 +1,3 @@
-//
-//  Direction.swift
-//  Langton
-//
-//  Created by Sam Soffes on 8/25/17.
-//  Copyright © 2017 Sam Soffes. All rights reserved.
-//
-
 public enum Direction {
 
 	// MARK: - Cases
@@ -14,7 +6,6 @@ public enum Direction {
 	case east
 	case south
 	case west
-
 
 	// MARK: - Properties
 

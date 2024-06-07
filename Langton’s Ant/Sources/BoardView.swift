@@ -1,11 +1,3 @@
-//
-//  BoardView.swift
-//  Langton’s Ant
-//
-//  Created by Sam Soffes on 8/25/17.
-//  Copyright © 2017 Sam Soffes. All rights reserved.
-//
-
 import AppKit
 
 final class BoardView: NSView {
@@ -24,12 +16,11 @@ final class BoardView: NSView {
 
 	private let scale: CGFloat
 
-	var theme: Theme {
-		didSet {
-			setNeedsDisplay(bounds)
-		}
-	}
-
+    var theme: Theme {
+        didSet {
+            setNeedsDisplay(bounds)
+        }
+    }
 
 	// MARK: - Initializers
 
@@ -40,19 +31,21 @@ final class BoardView: NSView {
 		super.init(frame: .zero)
 	}
 
+    @available(*, unavailable)
 	required init?(coder aDecoder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
+        fatalError("\(#function) has not been implemented")
 	}
-
 
 	// MARK: - UIView
 
 	override var intrinsicContentSize: CGSize {
-		return CGSize(width: CGFloat(board.size.width) * scale, height: CGFloat(board.size.height) * scale)
+		CGSize(width: CGFloat(board.size.width) * scale, height: CGFloat(board.size.height) * scale)
 	}
 
 	override func draw(_ rect: CGRect) {
-		guard let context = NSGraphicsContext.current()?.cgContext else { return }
+        guard let context = NSGraphicsContext.current?.cgContext else {
+            return
+        }
 
 		// Background
 		context.setFillColor(theme.backgroundColor.cgColor)
