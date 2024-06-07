@@ -1,4 +1,3 @@
-import Foundation
 import ScreenSaver
 
 final class Preferences: NSObject {

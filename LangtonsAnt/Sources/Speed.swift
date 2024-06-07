@@ -1,5 +1,3 @@
-import Foundation
-
 enum Speed: Int {
 	case slow = 1
 	case normal
