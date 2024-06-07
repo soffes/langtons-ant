@@ -39,10 +39,10 @@ final class Preferences: NSObject {
 		}
 	}
 
-    @objc
+	@objc
 	var speedInteger: Int {
 		get {
-            let speed = Speed(rawValue: Self.defaults.integer(forKey: Key.speed.rawValue)) ?? .normal
+			let speed = Speed(rawValue: Self.defaults.integer(forKey: Key.speed.rawValue)) ?? .normal
 			return speed.rawValue
 		}
 
@@ -50,57 +50,57 @@ final class Preferences: NSObject {
 			let key = Key.speed
 			let speed = Speed(rawValue: newValue) ?? .normal
 
-            Self.defaults.set(speed.rawValue, forKey: key.rawValue)
-            Self.defaults.synchronize()
+			Self.defaults.set(speed.rawValue, forKey: key.rawValue)
+			Self.defaults.synchronize()
 
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
 	}
 
-    @objc
+	@objc
 	var noiseAmount: Int {
 		get {
-            Self.defaults.integer(forKey: Key.noiseAmount.rawValue)
+			Self.defaults.integer(forKey: Key.noiseAmount.rawValue)
 		}
 
 		set {
 			let key = Key.noiseAmount
 			let value = min(35, max(0, newValue))
 
-            Self.defaults.set(value, forKey: key.rawValue)
-            Self.defaults.synchronize()
+			Self.defaults.set(value, forKey: key.rawValue)
+			Self.defaults.synchronize()
 
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
 	}
 
-    @objc
+	@objc
 	var numberOfAnts: Int {
 		get {
-            Self.defaults.integer(forKey: Key.numberOfAnts.rawValue)
+			Self.defaults.integer(forKey: Key.numberOfAnts.rawValue)
 		}
 
 		set {
 			let key = Key.numberOfAnts
 
-            Self.defaults.set(min(9, max(1, newValue)), forKey: key.rawValue)
-            Self.defaults.synchronize()
+			Self.defaults.set(min(9, max(1, newValue)), forKey: key.rawValue)
+			Self.defaults.synchronize()
 
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}
 	}
 
-    @objc
+	@objc
 	var darkMode: Bool {
 		get {
-            Self.defaults.bool(forKey: Key.darkMode.rawValue)
+			Self.defaults.bool(forKey: Key.darkMode.rawValue)
 		}
 
 		set {
 			let key = Key.darkMode
 
-            Self.defaults.set(newValue, forKey: key.rawValue)
-            Self.defaults.synchronize()
+			Self.defaults.set(newValue, forKey: key.rawValue)
+			Self.defaults.synchronize()
 
 			NotificationCenter.default.post(name: key.notificationName, object: nil)
 		}

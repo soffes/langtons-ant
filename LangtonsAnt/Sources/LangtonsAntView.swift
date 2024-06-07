@@ -22,14 +22,14 @@ public final class LangtonsAntView: ScreenSaverView {
 			preferencesWindowController?.close()
 		}
 	}
-	
+
 	// MARK: - Initializers
 
 	public override init?(frame: NSRect, isPreview: Bool) {
 		super.init(frame: frame, isPreview: isPreview)
 		initialize()
 	}
-	
+
 	public required init?(coder: NSCoder) {
 		super.init(coder: coder)
 		initialize()
@@ -49,7 +49,7 @@ public final class LangtonsAntView: ScreenSaverView {
 	}
 
 	public override func draw(_ rect: NSRect) {
-        guard let context = NSGraphicsContext.current?.cgContext else { return }
+		guard let context = NSGraphicsContext.current?.cgContext else { return }
 
 		context.setFillColor(boardView?.theme.backgroundColor.cgColor ?? NSColor.black.cgColor)
 		context.fill(bounds)
@@ -70,8 +70,8 @@ public final class LangtonsAntView: ScreenSaverView {
 		preferencesWindowController = windowController
 		return window
 	}
-	
-    public override var hasConfigureSheet: Bool {
+
+	public override var hasConfigureSheet: Bool {
 		true
 	}
 
@@ -130,19 +130,19 @@ public final class LangtonsAntView: ScreenSaverView {
 	}
 
 	@objc
-    private func resetBoard() {
+	private func resetBoard() {
 		previousSize = .zero
 		setupBoard()
 	}
 
 	@objc
-    private func speedDidChange() {
+	private func speedDidChange() {
 		speed = preferences.speed
-        animationTimeInterval = 1.0 / Double(speed.framesPerSecond)
+		animationTimeInterval = 1.0 / Double(speed.framesPerSecond)
 	}
 
 	@objc
-    private func themeDidChange() {
+	private func themeDidChange() {
 		boardView?.theme = preferences.darkMode ? DarkTheme() : LightTheme()
 		setNeedsDisplay(bounds)
 	}

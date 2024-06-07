@@ -9,18 +9,18 @@ final class BoardView: NSView {
 			if oldValue.size != board.size {
 				invalidateIntrinsicContentSize()
 			}
-			
+
 			setNeedsDisplay(bounds)
 		}
 	}
 
 	private let scale: CGFloat
 
-    var theme: Theme {
-        didSet {
-            setNeedsDisplay(bounds)
-        }
-    }
+	var theme: Theme {
+		didSet {
+			setNeedsDisplay(bounds)
+		}
+	}
 
 	// MARK: - Initializers
 
@@ -31,9 +31,9 @@ final class BoardView: NSView {
 		super.init(frame: .zero)
 	}
 
-    @available(*, unavailable)
+	@available(*, unavailable)
 	required init?(coder aDecoder: NSCoder) {
-        fatalError("\(#function) has not been implemented")
+		fatalError("\(#function) has not been implemented")
 	}
 
 	// MARK: - UIView
@@ -43,9 +43,9 @@ final class BoardView: NSView {
 	}
 
 	override func draw(_ rect: CGRect) {
-        guard let context = NSGraphicsContext.current?.cgContext else {
-            return
-        }
+		guard let context = NSGraphicsContext.current?.cgContext else {
+			return
+		}
 
 		// Background
 		context.setFillColor(theme.backgroundColor.cgColor)

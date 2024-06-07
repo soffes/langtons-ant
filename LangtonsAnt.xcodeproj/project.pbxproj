@@ -125,6 +125,7 @@
 				211873921F50D8F1005F7DE7 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		211873921F50D8F1005F7DE7 /* Products */ = {
 			isa = PBXGroup;
