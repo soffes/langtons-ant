@@ -7,59 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		218920DA1F50F1B900B03FCE /* LangtonsAntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D01F50F1B900B03FCE /* LangtonsAntView.swift */; };
-		218920DB1F50F1B900B03FCE /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D11F50F1B900B03FCE /* Board.swift */; };
-		218920DC1F50F1B900B03FCE /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D21F50F1B900B03FCE /* BoardView.swift */; };
-		218920DD1F50F1B900B03FCE /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D31F50F1B900B03FCE /* Size.swift */; };
-		218920DE1F50F1B900B03FCE /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D41F50F1B900B03FCE /* Point.swift */; };
-		218920DF1F50F1B900B03FCE /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D51F50F1B900B03FCE /* Ant.swift */; };
-		218920E01F50F1B900B03FCE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D61F50F1B900B03FCE /* Theme.swift */; };
-		218920E11F50F1B900B03FCE /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D71F50F1B900B03FCE /* Direction.swift */; };
+		210668F02C12B36600D070B6 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668DF2C12B36600D070B6 /* Ant.swift */; };
+		210668F12C12B36600D070B6 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E02C12B36600D070B6 /* Board.swift */; };
+		210668F22C12B36600D070B6 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E12C12B36600D070B6 /* BoardView.swift */; };
+		210668F32C12B36600D070B6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E22C12B36600D070B6 /* Direction.swift */; };
+		210668F42C12B36600D070B6 /* LangtonsAntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E32C12B36600D070B6 /* LangtonsAntView.swift */; };
+		210668F52C12B36600D070B6 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E42C12B36600D070B6 /* Point.swift */; };
+		210668F62C12B36600D070B6 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E52C12B36600D070B6 /* Preferences.swift */; };
+		210668F72C12B36600D070B6 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E62C12B36600D070B6 /* PreferencesWindowController.swift */; };
+		210668F82C12B36600D070B6 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E72C12B36600D070B6 /* Size.swift */; };
+		210668F92C12B36600D070B6 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E82C12B36600D070B6 /* Speed.swift */; };
+		210668FA2C12B36600D070B6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E92C12B36600D070B6 /* Theme.swift */; };
+		210668FC2C12B36600D070B6 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210668ED2C12B36600D070B6 /* Preferences.xib */; };
+		210668FD2C12B36D00D070B6 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E62C12B36600D070B6 /* PreferencesWindowController.swift */; };
+		210668FE2C12B36D00D070B6 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E82C12B36600D070B6 /* Speed.swift */; };
+		210668FF2C12B36D00D070B6 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E02C12B36600D070B6 /* Board.swift */; };
+		210669002C12B36D00D070B6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E92C12B36600D070B6 /* Theme.swift */; };
+		210669012C12B36D00D070B6 /* LangtonsAntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E32C12B36600D070B6 /* LangtonsAntView.swift */; };
+		210669022C12B36D00D070B6 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E12C12B36600D070B6 /* BoardView.swift */; };
+		210669032C12B36D00D070B6 /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668DF2C12B36600D070B6 /* Ant.swift */; };
+		210669042C12B36D00D070B6 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E42C12B36600D070B6 /* Point.swift */; };
+		210669052C12B36D00D070B6 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E72C12B36600D070B6 /* Size.swift */; };
+		210669062C12B36D00D070B6 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E52C12B36600D070B6 /* Preferences.swift */; };
+		210669072C12B36D00D070B6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210668E22C12B36600D070B6 /* Direction.swift */; };
+		210669082C12B37B00D070B6 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 210668ED2C12B36600D070B6 /* Preferences.xib */; };
 		218920EC1F50F1BD00B03FCE /* PreviewWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920E41F50F1BD00B03FCE /* PreviewWindowController.swift */; };
 		218920ED1F50F1BD00B03FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920E51F50F1BD00B03FCE /* AppDelegate.swift */; };
 		218920EE1F50F1BD00B03FCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218920E81F50F1BD00B03FCE /* Main.storyboard */; };
 		218920EF1F50F1BD00B03FCE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218920EA1F50F1BD00B03FCE /* Images.xcassets */; };
-		218920F11F50F1D400B03FCE /* LangtonsAntView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D01F50F1B900B03FCE /* LangtonsAntView.swift */; };
-		218920F21F50F1D400B03FCE /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D11F50F1B900B03FCE /* Board.swift */; };
-		218920F31F50F1D400B03FCE /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D21F50F1B900B03FCE /* BoardView.swift */; };
-		218920F41F50F1D400B03FCE /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D31F50F1B900B03FCE /* Size.swift */; };
-		218920F51F50F1D400B03FCE /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D41F50F1B900B03FCE /* Point.swift */; };
-		218920F61F50F1D400B03FCE /* Ant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D51F50F1B900B03FCE /* Ant.swift */; };
-		218920F71F50F1D400B03FCE /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D61F50F1B900B03FCE /* Theme.swift */; };
-		218920F81F50F1D400B03FCE /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920D71F50F1B900B03FCE /* Direction.swift */; };
-		218920FC1F50F26B00B03FCE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FB1F50F26B00B03FCE /* Preferences.swift */; };
-		218920FD1F50F26D00B03FCE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FB1F50F26B00B03FCE /* Preferences.swift */; };
-		218920FF1F50F2DB00B03FCE /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FE1F50F2DB00B03FCE /* Speed.swift */; };
-		218921001F50F38200B03FCE /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218920FE1F50F2DB00B03FCE /* Speed.swift */; };
-		218921021F51034300B03FCE /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218921011F51034300B03FCE /* Preferences.xib */; };
-		218921041F51059C00B03FCE /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218921031F51059C00B03FCE /* PreferencesWindowController.swift */; };
-		218921051F51060600B03FCE /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218921031F51059C00B03FCE /* PreferencesWindowController.swift */; };
-		218921061F51060600B03FCE /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218921011F51034300B03FCE /* Preferences.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		211873911F50D8F1005F7DE7 /* Langton’s Ant.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Langton’s Ant.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		210668DF2C12B36600D070B6 /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
+		210668E02C12B36600D070B6 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		210668E12C12B36600D070B6 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		210668E22C12B36600D070B6 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		210668E32C12B36600D070B6 /* LangtonsAntView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangtonsAntView.swift; sourceTree = "<group>"; };
+		210668E42C12B36600D070B6 /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		210668E52C12B36600D070B6 /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		210668E62C12B36600D070B6 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		210668E72C12B36600D070B6 /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		210668E82C12B36600D070B6 /* Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		210668E92C12B36600D070B6 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		210668EB2C12B36600D070B6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		210668EC2C12B36600D070B6 /* LangtonsAnt.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = LangtonsAnt.entitlements; sourceTree = "<group>"; };
+		210668ED2C12B36600D070B6 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		211873911F50D8F1005F7DE7 /* LangtonsAnt.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LangtonsAnt.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		211873A21F50D8FE005F7DE7 /* Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preview.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		218920D01F50F1B900B03FCE /* LangtonsAntView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LangtonsAntView.swift; sourceTree = "<group>"; };
-		218920D11F50F1B900B03FCE /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
-		218920D21F50F1B900B03FCE /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
-		218920D31F50F1B900B03FCE /* Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
-		218920D41F50F1B900B03FCE /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		218920D51F50F1B900B03FCE /* Ant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ant.swift; sourceTree = "<group>"; };
-		218920D61F50F1B900B03FCE /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		218920D71F50F1B900B03FCE /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		218920D91F50F1B900B03FCE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		218920E41F50F1BD00B03FCE /* PreviewWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewWindowController.swift; sourceTree = "<group>"; };
 		218920E51F50F1BD00B03FCE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		218920E71F50F1BD00B03FCE /* Preview.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Preview.entitlements; sourceTree = "<group>"; };
 		218920E91F50F1BD00B03FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		218920EA1F50F1BD00B03FCE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		218920EB1F50F1BD00B03FCE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		218920FB1F50F26B00B03FCE /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
-		218920FE1F50F2DB00B03FCE /* Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
-		218921011F51034300B03FCE /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
-		218921031F51059C00B03FCE /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
-		218921081F519BD400B03FCE /* LangtonsAnt.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = LangtonsAnt.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +80,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210668EA2C12B36600D070B6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				210668DF2C12B36600D070B6 /* Ant.swift */,
+				210668E02C12B36600D070B6 /* Board.swift */,
+				210668E12C12B36600D070B6 /* BoardView.swift */,
+				210668E22C12B36600D070B6 /* Direction.swift */,
+				210668E32C12B36600D070B6 /* LangtonsAntView.swift */,
+				210668E42C12B36600D070B6 /* Point.swift */,
+				210668E52C12B36600D070B6 /* Preferences.swift */,
+				210668E62C12B36600D070B6 /* PreferencesWindowController.swift */,
+				210668E72C12B36600D070B6 /* Size.swift */,
+				210668E82C12B36600D070B6 /* Speed.swift */,
+				210668E92C12B36600D070B6 /* Theme.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		210668EE2C12B36600D070B6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				210668EB2C12B36600D070B6 /* Info.plist */,
+				210668EC2C12B36600D070B6 /* LangtonsAnt.entitlements */,
+				210668ED2C12B36600D070B6 /* Preferences.xib */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		210668EF2C12B36600D070B6 /* LangtonsAnt */ = {
+			isa = PBXGroup;
+			children = (
+				210668EA2C12B36600D070B6 /* Sources */,
+				210668EE2C12B36600D070B6 /* Support */,
+			);
+			path = LangtonsAnt;
+			sourceTree = "<group>";
+		};
 		211873871F50D8F1005F7DE7 = {
 			isa = PBXGroup;
 			children = (
-				211873931F50D8F1005F7DE7 /* Langton’s Ant */,
+				210668EF2C12B36600D070B6 /* LangtonsAnt */,
 				211873A31F50D8FE005F7DE7 /* Preview */,
 				211873921F50D8F1005F7DE7 /* Products */,
 			);
@@ -92,19 +129,10 @@
 		211873921F50D8F1005F7DE7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				211873911F50D8F1005F7DE7 /* Langton’s Ant.saver */,
+				211873911F50D8F1005F7DE7 /* LangtonsAnt.saver */,
 				211873A21F50D8FE005F7DE7 /* Preview.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		211873931F50D8F1005F7DE7 /* Langton’s Ant */ = {
-			isa = PBXGroup;
-			children = (
-				218920CF1F50F1B900B03FCE /* Sources */,
-				218920D81F50F1B900B03FCE /* Support */,
-			);
-			path = "Langton’s Ant";
 			sourceTree = "<group>";
 		};
 		211873A31F50D8FE005F7DE7 /* Preview */ = {
@@ -114,27 +142,6 @@
 				218920E61F50F1BD00B03FCE /* Support */,
 			);
 			path = Preview;
-			sourceTree = "<group>";
-		};
-		218920CF1F50F1B900B03FCE /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				218920F91F50F20B00B03FCE /* Views */,
-				218920FA1F50F21200B03FCE /* Models */,
-				218920FB1F50F26B00B03FCE /* Preferences.swift */,
-				218921031F51059C00B03FCE /* PreferencesWindowController.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		218920D81F50F1B900B03FCE /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				218920D91F50F1B900B03FCE /* Info.plist */,
-				218921011F51034300B03FCE /* Preferences.xib */,
-				218921081F519BD400B03FCE /* LangtonsAnt.entitlements */,
-			);
-			path = Support;
 			sourceTree = "<group>";
 		};
 		218920E31F50F1BD00B03FCE /* Sources */ = {
@@ -157,29 +164,6 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		218920F91F50F20B00B03FCE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				218920D01F50F1B900B03FCE /* LangtonsAntView.swift */,
-				218920D21F50F1B900B03FCE /* BoardView.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		218920FA1F50F21200B03FCE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				218920D11F50F1B900B03FCE /* Board.swift */,
-				218920D31F50F1B900B03FCE /* Size.swift */,
-				218920D41F50F1B900B03FCE /* Point.swift */,
-				218920D51F50F1B900B03FCE /* Ant.swift */,
-				218920D61F50F1B900B03FCE /* Theme.swift */,
-				218920D71F50F1B900B03FCE /* Direction.swift */,
-				218920FE1F50F2DB00B03FCE /* Speed.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -193,9 +177,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		211873901F50D8F1005F7DE7 /* Langton’s Ant */ = {
+		211873901F50D8F1005F7DE7 /* LangtonsAnt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2118739B1F50D8F1005F7DE7 /* Build configuration list for PBXNativeTarget "Langton’s Ant" */;
+			buildConfigurationList = 2118739B1F50D8F1005F7DE7 /* Build configuration list for PBXNativeTarget "LangtonsAnt" */;
 			buildPhases = (
 				2118738C1F50D8F1005F7DE7 /* Sources */,
 				2118738D1F50D8F1005F7DE7 /* Frameworks */,
@@ -207,9 +191,9 @@
 			);
 			dependencies = (
 			);
-			name = "Langton’s Ant";
+			name = LangtonsAnt;
 			productName = "Langton’s Ant";
-			productReference = 211873911F50D8F1005F7DE7 /* Langton’s Ant.saver */;
+			productReference = 211873911F50D8F1005F7DE7 /* LangtonsAnt.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 		211873A11F50D8FE005F7DE7 /* Preview */ = {
@@ -257,7 +241,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2118738B1F50D8F1005F7DE7 /* Build configuration list for PBXProject "Langton’s Ant" */;
+			buildConfigurationList = 2118738B1F50D8F1005F7DE7 /* Build configuration list for PBXProject "LangtonsAnt" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -270,7 +254,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				211873901F50D8F1005F7DE7 /* Langton’s Ant */,
+				211873901F50D8F1005F7DE7 /* LangtonsAnt */,
 				211873A11F50D8FE005F7DE7 /* Preview */,
 			);
 		};
@@ -281,7 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218921021F51034300B03FCE /* Preferences.xib in Resources */,
+				210668FC2C12B36600D070B6 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				218920EE1F50F1BD00B03FCE /* Main.storyboard in Resources */,
-				218921061F51060600B03FCE /* Preferences.xib in Resources */,
+				210669082C12B37B00D070B6 /* Preferences.xib in Resources */,
 				218920EF1F50F1BD00B03FCE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,17 +303,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218920DD1F50F1B900B03FCE /* Size.swift in Sources */,
-				218921041F51059C00B03FCE /* PreferencesWindowController.swift in Sources */,
-				218920DE1F50F1B900B03FCE /* Point.swift in Sources */,
-				218920DC1F50F1B900B03FCE /* BoardView.swift in Sources */,
-				218920FF1F50F2DB00B03FCE /* Speed.swift in Sources */,
-				218920E11F50F1B900B03FCE /* Direction.swift in Sources */,
-				218920DF1F50F1B900B03FCE /* Ant.swift in Sources */,
-				218920DB1F50F1B900B03FCE /* Board.swift in Sources */,
-				218920DA1F50F1B900B03FCE /* LangtonsAntView.swift in Sources */,
-				218920E01F50F1B900B03FCE /* Theme.swift in Sources */,
-				218920FC1F50F26B00B03FCE /* Preferences.swift in Sources */,
+				210668F22C12B36600D070B6 /* BoardView.swift in Sources */,
+				210668F62C12B36600D070B6 /* Preferences.swift in Sources */,
+				210668F12C12B36600D070B6 /* Board.swift in Sources */,
+				210668F92C12B36600D070B6 /* Speed.swift in Sources */,
+				210668FA2C12B36600D070B6 /* Theme.swift in Sources */,
+				210668F52C12B36600D070B6 /* Point.swift in Sources */,
+				210668F82C12B36600D070B6 /* Size.swift in Sources */,
+				210668F02C12B36600D070B6 /* Ant.swift in Sources */,
+				210668F42C12B36600D070B6 /* LangtonsAntView.swift in Sources */,
+				210668F72C12B36600D070B6 /* PreferencesWindowController.swift in Sources */,
+				210668F32C12B36600D070B6 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,19 +321,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218920F71F50F1D400B03FCE /* Theme.swift in Sources */,
-				218920F11F50F1D400B03FCE /* LangtonsAntView.swift in Sources */,
+				210668FD2C12B36D00D070B6 /* PreferencesWindowController.swift in Sources */,
+				210668FE2C12B36D00D070B6 /* Speed.swift in Sources */,
+				210668FF2C12B36D00D070B6 /* Board.swift in Sources */,
+				210669002C12B36D00D070B6 /* Theme.swift in Sources */,
+				210669012C12B36D00D070B6 /* LangtonsAntView.swift in Sources */,
+				210669022C12B36D00D070B6 /* BoardView.swift in Sources */,
+				210669032C12B36D00D070B6 /* Ant.swift in Sources */,
+				210669042C12B36D00D070B6 /* Point.swift in Sources */,
+				210669052C12B36D00D070B6 /* Size.swift in Sources */,
+				210669062C12B36D00D070B6 /* Preferences.swift in Sources */,
+				210669072C12B36D00D070B6 /* Direction.swift in Sources */,
 				218920ED1F50F1BD00B03FCE /* AppDelegate.swift in Sources */,
-				218921001F50F38200B03FCE /* Speed.swift in Sources */,
-				218920F81F50F1D400B03FCE /* Direction.swift in Sources */,
-				218920F31F50F1D400B03FCE /* BoardView.swift in Sources */,
-				218920F21F50F1D400B03FCE /* Board.swift in Sources */,
-				218920F51F50F1D400B03FCE /* Point.swift in Sources */,
-				218920FD1F50F26D00B03FCE /* Preferences.swift in Sources */,
-				218921051F51060600B03FCE /* PreferencesWindowController.swift in Sources */,
-				218920F41F50F1D400B03FCE /* Size.swift in Sources */,
 				218920EC1F50F1BD00B03FCE /* PreviewWindowController.swift in Sources */,
-				218920F61F50F1D400B03FCE /* Ant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,13 +474,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Langton’s Ant/Support/LangtonsAnt.entitlements";
+				CODE_SIGN_ENTITLEMENTS = LangtonsAnt/Support/LangtonsAnt.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UP9C8XM22A;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = LHDXBG4XBK;
-				INFOPLIST_FILE = "$(SRCROOT)/Langton’s Ant/Support/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/LangtonsAnt/Support/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,13 +500,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Langton’s Ant/Support/LangtonsAnt.entitlements";
+				CODE_SIGN_ENTITLEMENTS = LangtonsAnt/Support/LangtonsAnt.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UP9C8XM22A;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = LHDXBG4XBK;
-				INFOPLIST_FILE = "$(SRCROOT)/Langton’s Ant/Support/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/LangtonsAnt/Support/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,7 +568,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2118738B1F50D8F1005F7DE7 /* Build configuration list for PBXProject "Langton’s Ant" */ = {
+		2118738B1F50D8F1005F7DE7 /* Build configuration list for PBXProject "LangtonsAnt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				211873991F50D8F1005F7DE7 /* Debug */,
@@ -593,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2118739B1F50D8F1005F7DE7 /* Build configuration list for PBXNativeTarget "Langton’s Ant" */ = {
+		2118739B1F50D8F1005F7DE7 /* Build configuration list for PBXNativeTarget "LangtonsAnt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2118739C1F50D8F1005F7DE7 /* Debug */,
